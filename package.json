@@ -4,16 +4,21 @@
   "private": true,
   "dependencies": {
     "axios": "^0.27.2",
+    "dotenv": "^16.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "0.9.5",
-    "sass": "^1.51.0"
+    "sass": "^1.51.0",
+    "uuid": "^8.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "create-react-component-folder": "^0.3.7"
   }
 }
