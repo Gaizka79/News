@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import { userContext } from '../../../context/userContext';
 
 class Nav extends Component {
   render() {

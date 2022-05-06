@@ -17,7 +17,7 @@ class Home extends Component {
     this.setState({ user });
     this.context.logIn(user);
   }
-  logout = (event) => {
+  logout = (event) => {//Sobra, solo va en el header
     event.preventDefault();
     const user = "";
     this.setState({ user });

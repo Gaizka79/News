@@ -27,7 +27,7 @@ class Main extends Component {
        <Routes>
           <Route element={<Home/>} path='/'/>
           <Route element={<Form value={(berria)=>this.createNew(berria)} />} path='/form'/>
-          <Route element={<List/>} path='/list'/>
+          <Route element={<List news={this.state.news} />} path='/list'/>
        </Routes>
       
       </div>

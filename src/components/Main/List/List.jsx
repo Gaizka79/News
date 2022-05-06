@@ -20,7 +20,7 @@ class List extends Component {
 
       console.log("Dentro " + this.state.news.length);
       
-      this.setState({ news: [...this.state.news, ...newsData]});
+      this.setState({ news: [...this.props.news, ...newsData]});
       console.log(newsData);
     }
     catch (err) {
@@ -29,13 +29,10 @@ class List extends Component {
   }
 
   render() {
-    let temp = this.state.news;
-    console.log("nuevoooooooo");
-    console.log(temp);
     return (
       <div>
       <h3>Listado de noticias</h3>
-      {temp.map((berria, i) => <Card value={berria} key={i} />)}
+      {this.state.news.map((berria, i) => <Card value={berria} key={i} />)}
       
         
 

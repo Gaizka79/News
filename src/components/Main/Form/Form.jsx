@@ -19,16 +19,16 @@ class Form extends Component {
 addNew = (event) => {
   event.preventDefault();
 
-  const newTitulo = event.target.titulo.value;
-  const newTitular = event.target.titular.value;
+  const abstract = event.target.titulo.value;
+  const lead_paragraph = event.target.titular.value;
   const newNoticia = event.target.noticia.value;
 
-  const newNew = { newTitulo, newTitular, newNoticia };
+  const newNew = { abstract, lead_paragraph, newNoticia };
   //this.setState.newNew = [this.state.new, ...newNew];
   this.props.value(newNew);
   this.setState({ news: [...this.state.news, newNew]});
   
-  this.context.getNews(newTitulo, newTitular, newNoticia);
+  this.context.getNews(abstract, lead_paragraph, newNoticia);
 };
 
 
